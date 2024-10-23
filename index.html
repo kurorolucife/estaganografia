@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <title>Esteganografia</title>
+    <style>
+    body{
+      max-width: 800px;
+      margin-inline: auto;
+      margin-block: 2rem;
+    }
+    #depois{
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <div><input type="file" name="imagem" id="imagem" ></div>
+    <label>Mensagem:<input type="text" name="mensagem" id="mensagem"></label>
+    <output>
+      
+    </output>
+    <article>
+      <p>Imagem</p>
+      <canvas id="antes"></canvas>
+    </article>
+    <canvas id="depois"></canvas>
+    
+    <button id="enviar">Codificar</button>
+    <button id="decode">Decodificar</button>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
